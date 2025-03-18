@@ -1,103 +1,97 @@
+import { Card1 } from "@/components/card1";
 import Image from "next/image";
+import { BsGithub, BsWhatsapp } from "react-icons/bs";
+import { IoLogoYoutube } from "react-icons/io";
+import { SiLinkedin } from "react-icons/si";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <div className="overflow-hidden">
+
+      {/* sessão 1 - Nav */}
+      <nav className=" w-96 h-20 align-baseline absolute mt-16 md:right-16 flex gap-2">
+
+        <div className="item1 flex items-center justify-end w-44 bg-green-900 hover:bg-green-700 rounded-l-2xl p-2 cursor-pointer duration-300"> 
+          <h3 className="pr-2">Home</h3> 
+          <div className="border-l-2 border-dashed border-b-blue-50 ">
+              <Image src="/home.png" width={40} height={40} alt="" className="ml-2" />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="item1 flex items-center justify-start w-44 bg-green-900 hover:bg-green-700 rounded-r-2xl p-2 cursor-pointer duration-300"> 
+          <div className="border-r-2 border-dashed border-b-blue-50 ">
+              <Image src="/works.png" width={40} height={40} alt="" className="mr-2" />
+          </div>
+          <h3 className="pl-2">Home</h3> 
+        </div>
+
+      </nav>
+
+      {/* sessão 2 - home */}
+      <section className=" bg-geral h-screen w-screen flex items-center justify-center">
+        <div className="max-w-[1280px] flex flex-col justify-center items-center gap-20 md:flex-row ">
+          <div className="flex flex-col w-[70%] ">
+            <h2 className="text-green-500 text-xl mb-2 select-none">Olá, meu nome é</h2>
+            <h1 className="text-slate-600 font-semibold text-5xl select-none">Sebastião Rodrigo</h1>
+            <p className="text-xl mt-10 mb-10 tracking-wider md:w-[90%] text-justify select-none">
+              Olá, sou um desenvolvedor front-end apaixonado por tecnologia. Com
+              mais de <span className="text-slate-500 font-semibold">5 anos de experiência.</span> Meu objetivo é criar interfaces de
+              usuário bonitas e funcionais, além de liderar equipes técnicas em
+              projetos desafiadores. Estou sempre aberto a novas oportunidades e
+              desafios tenho uma experiência inicial com backend.
+            </p>
+            <footer className="flex gap-2">
+              <button className="bg-green-500 p-2 px-7 rounded-md mr-5 cursor-pointer hover:bg-green-600 duration-300 hover:scale-105">
+                Entre em contato
+              </button>
+              <div className="btn-gruoup flex gap-5 items-center justify-center">
+              <button>
+                <BsWhatsapp size={25} className="cursor-pointer hover:scale-110 duration-300 hover:rotate-45" />
+              </button>
+              <button>
+                <BsGithub size={25} className="cursor-pointer hover:scale-110 duration-300 hover:rotate-45" />
+              </button>
+              <button>
+                <IoLogoYoutube size={28} className="cursor-pointer hover:scale-110 duration-300 hover:rotate-45" />
+              </button>
+              <button>
+                <SiLinkedin size={25} className="cursor-pointer hover:scale-110 duration-300 hover:rotate-45" />
+              </button>
+              </div>
+            </footer>
+          </div>
+          <div className="w-[30%]">
+            <Image src="/perfil.png" width={600} height={300} alt="" className="rounded-r-4xl"/>
+          </div>
+        </div>
+      </section>
+
+      {/* sessão 3 - Certificados / Experiências */}
+      <section className="bg-slate-900 h-screen w-screen flex items-center justify-center">
+        <div className=" w-[1280px]">
+          <div className="mb-10">
+          <h2 className="text-white text-xl text-center mb-10">Meus Certificados e Experiências</h2>
+          <div className="flex flex-wrap gap-10 justify-center">
+            <div className="max-w-[200px] cursor-pointer hover:scale-150 duration-300">
+              <Image src="/certificado-2.jpg" width={200} height={200} alt="" />
+              <h3 className="text-white text-sm text-center">Certificado 1</h3>
+            </div>
+            <div className="max-w-[200px] cursor-pointer hover:scale-150 duration-300">
+              <Image src="/certificado-2.jpg" width={200} height={200} alt="" />
+              <h3 className="text-white text-sm text-center">Certificado 2</h3>
+            </div>
+          </div>
+          </div>
+        <Card1 />
+        </div>
+      </section>
+
+      {/* sessão 4 - Destaques */}
+      <section className="bg-green-950 h-screen w-screen"></section>
+
+      {/* sessão 5 09 - Ultimos projetos */}
+      <section className="bg-green-950 h-screen w-screen"></section>
     </div>
   );
 }
