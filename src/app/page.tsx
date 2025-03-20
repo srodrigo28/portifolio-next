@@ -34,13 +34,30 @@ export default function Home() {
           <div className="flex flex-col w-[70%] ">
             <h2 className="text-green-500 text-xl mb-2 select-none">Olá, meu nome é</h2>
             <h1 className="text-slate-600 font-semibold text-5xl select-none">Sebastião Rodrigo</h1>
-            <p className="text-xl mt-10 mb-10 tracking-wider md:w-[90%] text-justify select-none">
+            <div className="text-xl mt-10 mb-10 tracking-wider md:w-[90%] text-justify select-none">
               Olá, sou um desenvolvedor front-end apaixonado por tecnologia. Com
-              mais de <span className="text-slate-500 font-semibold">5 anos de experiência.</span> Meu objetivo é criar interfaces de
+              mais de <span className="text-slate-500 font-semibold">10 anos de experiência.</span> Meu objetivo é criar interfaces de
               usuário bonitas e funcionais, além de liderar equipes técnicas em
               projetos desafiadores. Estou sempre aberto a novas oportunidades e
               desafios tenho uma experiência inicial com backend.
-            </p>
+
+              <hr className="bg-gray-700 mt-5" />
+              <div className="h-16 text-sm flex gap-2 flex-wrap justify-start items-center mt-2">
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">NextJS</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">ReactJS</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">TailWind</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">ShadCN-UI</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">NodeJS</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">PrismaORM</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">Angular</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">Supabase</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">Neon</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">Vercel</button>
+              <button className="bg-green-900 pt-2 pb-1 px-4 rounded-lg cursor-pointer hover:scale-105 duration-300 hover:bg-green-700 border">GitHub</button>
+            </div>
+              <hr className="bg-gray-700 mt-5" />
+            </div>
+            
             <footer className="flex gap-2">
               <button className="bg-green-500 p-2 px-7 rounded-md mr-5 cursor-pointer hover:bg-green-600 duration-300 hover:scale-105">
                 Entre em contato

@@ -1,3 +1,3 @@
 #### Projeto Portifolio em nextjs
 
-<img src="./screens/home.jpeg" alt="" />
+<img src="./screens/home.png" alt="" />
